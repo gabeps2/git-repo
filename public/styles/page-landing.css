@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 162, 255);
+    font-family: 'Archivo', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+
+body #container{
+    max-width: 900px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(0, 162, 255);
+}
+
+body #icon-github {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgb(0, 162, 255);
+    border: none;
+    align-items: center;
+    transition: 0.5s;
+
+    margin-top: 50px;
+    
+}
+
+body #icon-github:hover {
+    background-color: #ffffff;
+}
+
+body #icon-github img {
+    height: 101%;
+    width: 101%;
+    margin-top: -5px;
+    margin-left: -2px;
+}
+
+body #box{
+    margin-top: 40px;
+    width: 350px;
+    height: 255px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.50);
+    border: 1px solid;
+    border-color: #0B1086;
+}
+
+body #box #input{
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: white;
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    color: #0B1086;
+    transition: 0.5s;
+    text-decoration: none;
+
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.50);
+    border: 1px solid;
+    border-color: rgb(0, 162, 255);
+}
+
+body #box #button{
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: rgb(0, 162, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+    transition: 0.5s;
+    text-decoration: none;
+
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.50);
+    border: 1px solid;
+    border-color: rgb(0, 162, 255);
+}
+
+body #box #button:hover {
+    border-color: rgb(0, 162, 255);
+    background-color: white;
+    color: rgb(0, 162, 255);
+}
