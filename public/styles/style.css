@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 140, 255);
+    font-family: 'Archivo', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+.content {
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 10px;
+}
+
+header #main-header {
+    height: 60px;
+    background-color: rgb(0, 162, 255);
+}
+
+header #main-header .content {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header #back {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+    border: 2px solid;
+    border-color: #0B1086;
+
+    transition: 0.5s;
+}
+
+header #back:hover{
+    border-color: white;
+    background-color: #464646;
+    color: white;
+}
+
+header #back img {
+    height: 60%;
+    width: 60%;
+    margin-left: 17%;
+}
+
+header #icon-github {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: white;
+    border: none;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+
+    transition: 0.5s;
+}
+
+header #icon-github:hover{
+    background-color: #464646;
+}
+
+header #icon-github img {
+    height: 100%;
+    width: 100%;
+}
+
+header #avatar-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+    border: 2px solid;
+    border-color: #0B1086;
+}
+
+header #avatar-img img {
+    height: 100%;
+    width: 100%;
+}
+
+header #second-header {
+    height: 60px;
+    padding-top: 20px;
+}
+
+header #second-header .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header #second-header .second-content {
+    /*Seus repositórios*/
+    width: 220px;
+    height: 60px;
+    background-color: white;
+    border-radius: 30px;
+    border: 2px solid;
+    border-color: #0B1086;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: #0B1086;
+}
+
+body #repositories {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+body #repositories .box {
+    margin-top: 40px;
+    width: 394px;
+    height: 255px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.50);
+    border: 2px solid;
+    border-color: #0B1086;
+}
+
+body #repositories .box .img-languages {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: yellow;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.50);
+    border: 0px solid;
+    border-color: #0B1086;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+body #repositories .box .img-languages img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+body #repositories .box .date {
+    width: 80px;
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid;
+    border-color: #0B1086;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    color: #0B1086;
+    margin-top: 50px;
+    transition: 0.5s;
+}
+
+body #repositories .box .date:hover {
+    border-color: white;
+    background-color: #464646;
+    color: white;
+}
+
+body #repositories .right-elements .repository-name {
+    width: 144px;
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid;
+    border-color: #0B1086;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 6px;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    color: #0B1086;
+    margin-top: 16px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+body #repositories .right-elements .repository-name:hover {
+    border-color: white;
+    background-color: #0B1086;
+    color: white;
+}
+
+body #repositories .right-elements .download {
+    width: 144px;
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid;
+    border-color: #0B1086;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 6px;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    color: #0B1086;
+    margin-top: 30px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+body #repositories .right-elements .download:hover {
+    border-color: white;
+    background-color: #0B1086;
+    color: white;
+}
+
+body #repositories .content .box .description {
+    width: 374px;
+    height: 100px;
+    border-radius: 30px;
+    border: 2px solid;
+    border-color: #0B1086;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 6px;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    color: #0B1086;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: -5px;
+}
