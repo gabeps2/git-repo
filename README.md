@@ -1,6 +1,6 @@
 # git-repo
 <p align="center">
-Aplicação que consome a api do github, buscando e exibindo todos os repositórios públicos do usuário informado.
+Aplicação que consome os dados da api do github, buscando e exibindo todos os repositórios públicos do usuário informado.
 </p>
 
 <div align="center">
