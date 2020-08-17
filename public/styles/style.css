@@ -206,6 +206,7 @@ body #repositories .right-elements .repository-name {
     margin-top: 16px;
     margin-right: 10px;
     transition: 0.5s;
+    text-decoration: none;
 }
 
 body #repositories .right-elements .repository-name:hover {

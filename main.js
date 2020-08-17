@@ -1,11 +1,8 @@
-import {textInput} from '/index.js';
-console.log(textInput);
-
-var colors = ['#FFE146', '#6A1577'];
-var languageIcons = ['/public/images/icons/javascript_icon_130900.png', '/public/images/icons/csharpicon.png']
+var colors = ['#FFE146', '#7443e7','#3B83BD'];
+var languageIcons = ['/public/images/icons/javascript_icon_130900.png', '/public/images/icons/csharpicon.png','/public/images/icons/css3.svg']
 
 function getDownloadLink(repoName) {
-    return `https://codeload.github.com/gabeps2/${repoName}/zip/master`
+    return `https://codeload.github.com/gabeps2/gabeps2/zip/master`
 }
 
 var getBox = document.querySelector('#repositories')
@@ -14,12 +11,12 @@ var newBox = getBox.innerHTML;
 
 class Api {
     static async getUserInfo(username) {
-        const response = await axios.get(`https://api.github.com/users/${username}`);
+        const response = await axios.get(`https://api.github.com/users/gabeps2`);
         return response;
     }
     static async getRepoInfo(username) {
         try {
-            const repositoryData = await axios.get(` https://api.github.com/users/${username}/repos`);
+            const repositoryData = await axios.get(` https://api.github.com/users/gabeps2/repos`);
             return repositoryData;
         } catch (error) {
             console.warn('Algo deu errado!')
@@ -60,6 +57,12 @@ async function getUserData() {
 
             newImg.setAttribute('src', languageIcons[0]);
             imgLanguages.appendChild(newImg);
+        }else if (repoData.data[i].language == "CSS") {
+            let newImg = document.createElement('img');
+            document.querySelectorAll('.box')[i].style.backgroundColor = colors[2];
+
+            newImg.setAttribute('src', languageIcons[2]);
+            imgLanguages.appendChild(newImg);
         }
 
         //Definindo a data
@@ -82,7 +85,7 @@ async function getUserData() {
         descriptionDiv.appendChild(newPDescription)
 
 
-        if (i < repoData.data.length - 2) {
+        if (i < repoData.data.length - 1) {
             getBox.innerHTML += newBox;
         }
 
